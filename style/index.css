@@ -18,9 +18,9 @@
 }
 
 .form-outline .form-control:focus ~ .form-label {
-  color: #f93154;
+  color: #dd6075;
   top: 0px !important;
 }
 body {
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
 }

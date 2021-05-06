@@ -23,8 +23,10 @@ function validateEmail(email) {
 
 
 
+
+
 //Password Validation Check if the password is valid
-function validatePassword(password, passwordConfirmaion) {
+function validPassword(password, passwordConfirmaion) {
   console.log("nam");
   if (password !== passwordConfirmaion) {
     //Password Validation Check if the password is the same as passwordConfirmaion
@@ -37,10 +39,12 @@ function validatePassword(password, passwordConfirmaion) {
   return true;
 }
 
+
+
 //check if name is valid
-function validateName(name) {
+function validName(name) {
   //check if name have more than 3 chars
-  if (name.length <= 3) {
+  if (name.length <= 4 ){
     return alert("Please enter a valid name");
   }
   return true;
@@ -49,6 +53,7 @@ function validateName(name) {
 
 
 //validate all form
+
 function val() {
   //get Email value
   const email = document.getElementById("email").value;
@@ -61,8 +66,8 @@ function val() {
   //validate using fuctions
   if (
     validateEmail(email) &&
-    validatePassword(password, passwordConfirmaion) &&
-    validateName(nom)
+    validPassword(password, passwordConfirmaion) &&
+    validName(nom)
   ) {
     alert("Form is Valid");
   }
